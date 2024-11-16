@@ -31,6 +31,13 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
   </style>
+
+  <script>
+    // Disable right-click on the entire page
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+  </script>
 </head>
 <body>
   <div class="note">
@@ -46,7 +53,8 @@
     width="640" 
     height="360" 
     frameborder="0" 
-    allowfullscreen>
+    allowfullscreen 
+    style="pointer-events: none;">
   </iframe>
 
   <div class="description">
