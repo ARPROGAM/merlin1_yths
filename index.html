@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Merlin 1. Sezon 1. Bölüm</title>
+
+  <!-- Video.js CSS -->
+  <link href="https://vjs.zencdn.net/7.13.3/video-js.css" rel="stylesheet">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,11 +30,12 @@
       margin: 10px auto;
       color: #555;
     }
-    video {
-      width: 100%;
-      max-width: 640px;
-      height: auto;
+    #video-player {
       margin-top: 20px;
+      max-width: 100%;
+      width: 640px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
@@ -42,10 +47,14 @@
 
   <h1>Merlin 1. Sezon 1. Bölüm</h1>
 
-  <video controls>
+  <!-- Video.js Player -->
+  <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" data-setup="{}">
     <source src="https://drive.google.com/uc?id=1hGcMy61ERESxK4_2lZNfBDQH1J6QqOFY&export=download" type="video/mp4">
     Tarayıcınız video etiketini desteklemiyor.
   </video>
+
+  <!-- Video.js Script -->
+  <script src="https://vjs.zencdn.net/7.13.3/video.js"></script>
 
   <div class="description">
     <p>
