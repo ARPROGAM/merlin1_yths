@@ -9,48 +9,27 @@
       font-family: 'Arial', sans-serif;
       background-color: #121212;
       color: #fff;
+      text-align: center;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-top: 10px;
+      font-size: 2rem;
+      margin: 20px;
       color: #f1f1f1;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    video {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.8rem;
-      }
     }
   </style>
 </head>
 <body>
 
   <h1>Merlin 1. Sezon 1. Bölüm</h1>
-  
-  <!-- Embed the video from Telegram -->
-  <video controls>
-    <source src="https://t.me/delirmek1/90/92" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+  <!-- Embed Telegram Post -->
+  <script async src="https://telegram.org/js/telegram-widget.js?22" 
+          data-telegram-post="delirmek1/92" 
+          data-width="100%">
+  </script>
 
 </body>
 </html>
