@@ -37,6 +37,24 @@
     document.addEventListener('contextmenu', function(event) {
       event.preventDefault();
     });
+
+    // Function to toggle fullscreen mode
+    function toggleFullScreen() {
+      var iframe = document.querySelector('iframe');
+      
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) { // Firefox
+        iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) { // IE/Edge
+        iframe.msRequestFullscreen();
+      }
+    }
+
+    // Add double-click event listener to trigger fullscreen
+    document.querySelector('iframe').addEventListener('dblclick', toggleFullScreen);
   </script>
 </head>
 <body>
