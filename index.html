@@ -37,15 +37,6 @@
     document.addEventListener('contextmenu', function(event) {
       event.preventDefault();
     });
-
-    // Function to autoplay the video after 5 seconds
-    window.onload = function() {
-      setTimeout(function() {
-        var iframe = document.querySelector('iframe');
-        var iframeSrc = iframe.src;
-        iframe.src = iframeSrc + "&autoplay=1"; // Add autoplay parameter
-      }, 5000); // Delay of 5 seconds (5000 milliseconds)
-    };
   </script>
 </head>
 <body>
@@ -56,10 +47,10 @@
 
   <h1>Merlin 1. Sezon 1. Bölüm</h1>
   
-  <!-- Embed the video from Google Drive -->
+  <!-- Embed the video from Google Drive with autoplay parameter -->
   <iframe 
     id="video" 
-    src="https://drive.google.com/file/d/1hGcMy61ERESxK4_2lZNfBDQH1J6QqOFY/preview" 
+    src="https://drive.google.com/file/d/1hGcMy61ERESxK4_2lZNfBDQH1J6QqOFY/preview?autoplay=1" 
     width="640" 
     height="360" 
     frameborder="0" 
